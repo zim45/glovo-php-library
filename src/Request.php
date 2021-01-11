@@ -7,12 +7,12 @@ use GuzzleHttp\ClientInterface;
 
 abstract class Request {
 
-    protected Configuration $config;
-    protected ?ClientInterface $client = null;
+    protected $config;
+    protected $client = null;
 
     abstract function getRequestPath();
 
-    protected ?array $data = null;
+    protected $data = null;
 
     public function __construct(Configuration $config, ClientInterface $client = null)
     {

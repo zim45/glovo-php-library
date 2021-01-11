@@ -10,7 +10,7 @@ class Product extends Store {
 
     const API_URL = 'products';
 
-    private ?string $productId = null;
+    private $productId = null;
 
     public function __construct($productId, $storeId, Configuration $config, ClientInterface $client)
     {

@@ -5,8 +5,8 @@ use Glovo\Configuration\Mode;
 
 class Configuration {
 
-    private ?Mode $mode = null;
-    private ?string $token = null;
+    private $mode = null;
+    private $token = null;
 
     public function __construct(Mode $mode, string $token)
     {

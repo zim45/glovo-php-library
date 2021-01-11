@@ -1,6 +1,6 @@
 <?php
 
-namespace Glovo\Api;
+namespace Glovo\Store;
 
 use Glovo\Store;
 

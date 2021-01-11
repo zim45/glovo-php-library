@@ -8,7 +8,7 @@ class Store extends Request {
 
     const API_URL = 'stores';
 
-    protected ?string $storeId = null;
+    protected $storeId = null;
 
     public function __construct($storeId, Configuration $config, ClientInterface $client = null)
     {

@@ -15,7 +15,7 @@ class Order extends Store {
     const ORDER_STATUS_OUT_FOR_DELIVERY      = 'OUT_FOR_DELIVERY';
     const ORDER_STATUS_PICKED_UP_BY_CUSTOMER = 'PICKED_UP_BY_CUSTOMER';
 
-    protected ?string $orderId = null;
+    protected $orderId = null;
 
     public function __construct($orderId, $storeId, Configuration $config, ClientInterface $client = null)
     {
